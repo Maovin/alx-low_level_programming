@@ -7,7 +7,7 @@ void print_triangle(int size)
 {
 	if (size <= 0)
 	{
-		_putchar('\n');
+		putchar('\n');
 	}
 	else
 	{
@@ -17,34 +17,15 @@ void print_triangle(int size)
 		{
 			for (j = i; j < size; j++)
 			{
-				_putchar(' ');
+			putchar(' ');
 			}
 
 			for (j = 1; j <= i; j++)
 			{
-				_putchar('#');
+				putchar('#');
 			}
 
-			_putchar('\n');
+			putchar('\n');
 		}
 	}
-}
-
-
-10-main.c
-
-#include "main.h"
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_triangle(2);
-    print_triangle(10);
-    print_triangle(1);
-    print_triangle(0);
-    return (0);
 }
